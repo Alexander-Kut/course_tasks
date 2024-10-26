@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: Montserrat;
 }
@@ -22,7 +26,7 @@ body {
 .top__heading {
   color: #202027;
   font-family: Montserrat;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
@@ -34,7 +38,7 @@ body {
 .top__text {
   color: #202027;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0px;
@@ -52,12 +56,18 @@ body {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
-  line-height: 141.69%;
+  line-height: 141%;
   text-align: center;
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 16px;
   padding-top: 16px;
+}
+
+.top-button:hover {
+  background-color: #ffffff;
+  color: #202027;
+  cursor: pointer;
 }
 
 .main {
@@ -71,7 +81,7 @@ body {
 .main__games-heading {
   color: #ffffff;
   font-family: Montserrat;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0;
@@ -90,20 +100,43 @@ body {
 
 .main__games {
   margin-top: 94px;
+  padding-bottom: 50px;
 }
 
 .main__games-content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 32px;
 }
 
 .main__games-item {
   width: 378px;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: #ffffff;
   display: grid;
   grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.main__games-content_altered {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/*.main__games-item_altered {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}*/
+.main__games-item:hover {
+  transform: scale(1.07);
+  cursor: pointer;
 }
 
 .main__games_img {
@@ -113,7 +146,7 @@ body {
 .main__games-itemname {
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 32px;
+  padding-top: 28px;
   padding-bottom: 36px;
 }
 
