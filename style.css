@@ -1,5 +1,142 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
+body {
+  font-family: Montserrat;
+}
+
+.top {
+  background-image: url(./images/fon.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top__heading {
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 196px;
+  width: 768px;
+}
+
+.top__text {
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 720px;
+  margin-top: 24px;
+  padding-bottom: 48px;
+}
+
+.top-button {
+  width: 247px;
+  background-color: #202027;
+  border-radius: 60px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.main {
+  background-color: #202027;
+}
+
+.main__games-enter {
+  padding-bottom: 72px;
+}
+
+.main__games-heading {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.main__games-text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  width: 788px;
+}
+
+.main__games {
+  margin-top: 94px;
+}
+
+.main__games-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+
+.main__games-item {
+  width: 378px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: grid;
+  grid-column: span 4;
+}
+
+.main__games_img {
+  border-radius: 30px;
+}
+
+.main__games-itemname {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 36px;
+}
+
+.main__games-itemtext {
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: center;
+  border-radius: 53px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  padding: 16px 8px 16px 8px;
+}
+
+.main__games-itemlabel {
+  padding-top: 16px;
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
