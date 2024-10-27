@@ -75,6 +75,7 @@ body {
     background-color: #ffffff;
     color: #202027;
     cursor: pointer;
+    transition: 1s;
 }
 
 .main {
@@ -145,6 +146,7 @@ body {
 
 .main__games-item:hover {
     transform: scale(1.07);
+    transition: 1s;
     cursor: pointer;
 }
 
