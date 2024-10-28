@@ -121,14 +121,14 @@ a {
   z-index: 1;
 }
 
-.main__picture_upper {
+.main__picture-upper {
   position: absolute;
   top: -10px;
   left: 864px;
   z-index: 1;
 }
 
-.main__picture_middle {
+.main__picture-middle {
   position: absolute;
   top: 254px;
   left: 1067px;
@@ -136,14 +136,14 @@ a {
   z-index: 1;
 }
 
-.main__picture_lower {
+.main__picture-lower {
   position: absolute;
   top: 380px;
   left: 1225px;
   z-index: 1;
 }
 
-.main__picture_triangle {
+.main__picture-triangle {
   position: absolute;
   z-index: 1;
   top: 468px;
