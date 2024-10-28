@@ -17,6 +17,10 @@ body {
     font-family: Montserrat;
 }
 
+a {
+    text-decoration: none;
+}
+
 .top {
     background-color: $colorLightYellow;
     background-size: cover;
@@ -71,13 +75,15 @@ body {
     padding-right: 28px;
     padding-bottom: 16px;
     padding-top: 16px;
+    transition: 1.5s;
+    //transition-delay: .3s;
 }
 
 .top-button:hover {
     background-color: #ffffff;
     color: #202027;
     cursor: pointer;
-    transition: 1s;
+    
 }
 
 .main {
@@ -225,7 +231,7 @@ body {
     align-self: flex-start;
 }
 
-.main__games-content_altered {
+.main__games-content-altered {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -247,7 +253,7 @@ body {
     cursor: pointer;
 }
 
-.main__games_img {
+.main__games-img {
     border-radius: 30px;
 }
 
