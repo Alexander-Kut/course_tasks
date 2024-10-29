@@ -79,11 +79,12 @@ a {
 .main {
   background-color: #202027;
   position: relative;
+  overflow: hidden;
 }
 
 .main__picture {
   position: absolute;
-  right: -340px;
+  right: -390px;
   top: -270px;
   background-color: transparent;
   z-index: 1;
