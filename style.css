@@ -11,11 +11,31 @@ body {
   font-family: Montserrat;
 }
 
+a {
+  text-decoration: none;
+}
+
 .top {
-  background-image: url(./images/fon.jpeg);
+  background-color: #e1ff8f;
   background-size: cover;
   background-position: center;
   height: 800px;
+  /*position: relative;*/
+  background-image: url(./images/star.png),
+                    url(./images/Star1.png),
+                    url(./images/Star2.png),
+                    url(./images/Star3.png),
+                    url(./images/Star4.png);
+  background-repeat: no-repeat, no-repeat,
+                    no-repeat, no-repeat, 
+                    no-repeat;
+  background-size: 80%, 35px, 57px, 37px, 83px;
+  background-position: 860px -400px,
+                      160px 70px,
+                      63px 95px,
+                      950px 540px,
+                      1015px 570px;
+  
 }
 
 .center {
@@ -62,6 +82,7 @@ body {
   padding-right: 28px;
   padding-bottom: 16px;
   padding-top: 16px;
+  transition: 1.5s;
 }
 
 .top-button:hover {
@@ -72,7 +93,27 @@ body {
 
 .main {
   background-color: #202027;
+  position: relative;
+  overflow: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main__games-enter {
   padding-bottom: 72px;
@@ -101,7 +142,37 @@ body {
 .main__games {
   margin-top: 94px;
   padding-bottom: 50px;
+  /*position: relative;*/
+  background-image: url(./images/transparentStar.png), 
+                    url(./images/Star5.png),
+                    url(./images/Star6.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 1020px 10px,
+                        30px 670px,
+                        45px 720px;
 }
+
+/*.main__games-picture {
+  position: absolute;
+  background-color: transparent;
+  top: 1px;
+  right: -83px;
+  z-index: 1;
+}
+
+.main__games-picture1 {
+  position: absolute;
+  background-color: transparent;
+  top: 670px;
+  left: 55px;
+}
+
+.main__games-picture2 {
+  position: absolute;
+  background-color: transparent;
+  top: 722px;
+  left: 70px;
+}*/
 
 .main__games-content {
   display: grid;
@@ -122,10 +193,11 @@ body {
   align-self: flex-start;
 }
 
-.main__games-content_altered {
+.main__games-content-altered {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  z-index: 2;
 }
 
 /*.main__games-item_altered {
@@ -136,10 +208,11 @@ body {
 }*/
 .main__games-item:hover {
   transform: scale(1.07);
+  transition: 1s;
   cursor: pointer;
 }
 
-.main__games_img {
+.main__games-img {
   border-radius: 30px;
 }
 
