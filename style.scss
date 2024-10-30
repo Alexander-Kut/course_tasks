@@ -26,7 +26,20 @@ a {
     background-size: cover;
     background-position: center;
     height: 800px;
-    position: relative;
+    background-image: url(./images/star.png),
+                    url(./images/Star1.png),
+                    url(./images/Star2.png),
+                    url(./images/Star3.png),
+                    url(./images/Star4.png);
+  background-repeat: no-repeat, no-repeat,
+                    no-repeat, no-repeat, 
+                    no-repeat;
+  background-size: 80%, 35px, 57px, 37px, 83px;
+  background-position: 860px -400px,
+                      160px 70px,
+                      63px 95px,
+                      950px 540px,
+                      1015px 570px;
 }
 
 
@@ -88,76 +101,7 @@ a {
 
 .main {
     background-color: $colorBlack;
-    position: relative;
-}
-
-.main__picture {
-    position: absolute;
-    right: -340px;
-    top: -270px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture1 {
-    position: absolute;
-    top: 70px;
-    left: 160px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture2 {
-    position: absolute;
-    top: 94px;
-    left: 64px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture3 {
-    position: absolute;
-    top: 538px;
-    left: 948px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture4 {
-    position: absolute;
-    top: 568px;
-    left: 1013px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture_upper {
-    position: absolute;
-    top: -10px;
-    left: 864px;
-    z-index: 1;
-}
-
-.main__picture_middle {
-    position: absolute;
-    top: 254px;
-    left: 1067px;
-    color: #202027;
-    z-index: 1;
-}
-
-.main__picture_lower {
-    position: absolute;
-    top: 380px;
-    left: 1225px;
-    z-index: 1;
-}
-
-.main__picture_triangle {
-    position: absolute;
-    z-index: 1;
-    top: 468px;
-    left: 1247px;
+    overflow: hidden;
     
 }
 
@@ -188,29 +132,15 @@ a {
 .main__games {
     margin-top: 94px;
     padding-bottom: 50px;
-    position: relative;
-}
+      /*position: relative;*/
+    background-image: url(./images/transparentStar.png), 
+                    url(./images/Star5.png),
+                    url(./images/Star6.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 1020px 10px,
+                        30px 670px,
+                        45px 720px;
 
-.main__games-picture {
-    position: absolute;
-    background-color: transparent;
-    top: 1px;
-    right: -83px;
-    z-index: 1;
-}
-
-.main__games-picture1 {
-    position: absolute;
-    background-color: transparent;
-    top: 670px;
-    left: 55px;
-}
-
-.main__games-picture2 {
-    position: absolute;
-    background-color: transparent;
-    top: 722px;
-    left: 70px;
 }
 
 .main__games-content {

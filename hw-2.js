@@ -3,8 +3,7 @@ alert(a);
 a = 20;
 alert(a);
 
-let firstIphoneYear = Number(2007);
-alert = firstIphoneYear;
+
 
 let nameInventor = "Brendan Eich";
 alert(nameInventor);
