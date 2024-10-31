@@ -304,6 +304,10 @@ a {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    background-image: url(./images/Vector.png), url(./images/Star1.png), url(./images/Star2.png), url(./images/Star3.png), url(./images/Star4.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 80%, 21px, 35px, 18px, 40px;
+    background-position: 190px -120px, 91px 64px, 37px 97px, 272px 557px, 303px 580px;
   }
   .top__heading {
     width: 262px;
@@ -380,11 +384,13 @@ a {
     text-align: left;
     padding-bottom: 32px;
   }
+  .footer {
+    margin-top: 49px;
+  }
   .footer__text {
     font-size: 1rem;
     font-weight: 600;
     line-height: 20px;
-    text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }

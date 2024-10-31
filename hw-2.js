@@ -30,7 +30,7 @@ num /=3;
 --num;
 alert(num);
 
-age = prompt('How old are you?');
+age = Number(prompt('How old are you?', '18'));
 alert(age);
 ;
 user = {name: "Brendan Eich", age: 63, isAdmin: false};
