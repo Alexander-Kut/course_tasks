@@ -20,22 +20,10 @@ a {
   background-size: cover;
   background-position: center;
   height: 800px;
-  /*position: relative;*/
-  background-image: url(./images/star.png),
-                    url(./images/Star1.png),
-                    url(./images/Star2.png),
-                    url(./images/Star3.png),
-                    url(./images/Star4.png);
-  background-repeat: no-repeat, no-repeat,
-                    no-repeat, no-repeat, 
-                    no-repeat;
+  background-image: url(./images/star.png), url(./images/Star1.png), url(./images/Star2.png), url(./images/Star3.png), url(./images/Star4.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 80%, 35px, 57px, 37px, 83px;
-  background-position: 860px -400px,
-                      160px 70px,
-                      63px 95px,
-                      950px 540px,
-                      1015px 570px;
-  
+  background-position: 860px -400px, 160px 70px, 63px 95px, 950px 540px, 1015px 570px;
 }
 
 .center {
@@ -68,7 +56,7 @@ a {
   padding-bottom: 48px;
 }
 
-.top-button {
+.top__button {
   width: 247px;
   background-color: #202027;
   border-radius: 60px;
@@ -85,7 +73,7 @@ a {
   transition: 1.5s;
 }
 
-.top-button:hover {
+.top__button:hover {
   background-color: #ffffff;
   color: #202027;
   cursor: pointer;
@@ -93,27 +81,8 @@ a {
 
 .main {
   background-color: #202027;
-  position: relative;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .main__games-enter {
   padding-bottom: 72px;
@@ -143,36 +112,11 @@ a {
   margin-top: 94px;
   padding-bottom: 50px;
   /*position: relative;*/
-  background-image: url(./images/transparentStar.png), 
-                    url(./images/Star5.png),
-                    url(./images/Star6.png);
+  background-image: url(./images/transparentStar.png), url(./images/Star5.png), url(./images/Star6.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 1020px 10px,
-                        30px 670px,
-                        45px 720px;
+  background-position: 1020px 10px, 30px 670px, 45px 720px;
+  border-bottom: 1px solid #bcec30;
 }
-
-/*.main__games-picture {
-  position: absolute;
-  background-color: transparent;
-  top: 1px;
-  right: -83px;
-  z-index: 1;
-}
-
-.main__games-picture1 {
-  position: absolute;
-  background-color: transparent;
-  top: 670px;
-  left: 55px;
-}
-
-.main__games-picture2 {
-  position: absolute;
-  background-color: transparent;
-  top: 722px;
-  left: 70px;
-}*/
 
 .main__games-content {
   display: grid;
@@ -245,4 +189,209 @@ a {
   line-height: 39px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.main__games-text_altered {
+  color: #202027;
+  width: 457px;
+  padding-bottom: 36px;
+}
+
+.minigames {
+  margin-top: 46px;
+}
+
+.minigames__img {
+  width: 600px;
+  border-radius: 45px;
+}
+
+.minigames__heading {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 72px;
+}
+
+.minigames__box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.minigames__item {
+  width: 1200px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.minigames__item_altered {
+  display: flex;
+  flex-direction: row;
+}
+
+.minigames__item-content {
+  width: 600px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.minigames__content-label {
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.minigames__content-button {
+  width: 247px;
+  border-radius: 60px;
+  background-color: #202027;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.minigames__content-button:hover {
+  color: #202027;
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #bcec30;
+  margin-top: 144px;
+}
+
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .main__games {
+    display: none;
+  }
+  .top {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: url(./images/Vector.png), url(./images/Star1.png), url(./images/Star2.png), url(./images/Star3.png), url(./images/Star4.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 80%, 21px, 35px, 18px, 40px;
+    background-position: 190px -120px, 91px 64px, 37px 97px, 272px 557px, 303px 580px;
+  }
+  .top__heading {
+    width: 262px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+    padding-top: 147px;
+  }
+  .top__text {
+    width: 296px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 36px;
+  }
+  .top__button {
+    width: 285px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 142%;
+    text-align: center;
+  }
+  .minigames {
+    margin-top: 48px;
+  }
+  .minigames__box {
+    gap: 24px;
+    align-items: center;
+  }
+  .minigames__heading {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+  .minigames__item {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+  }
+  .minigames__img {
+    width: 343px;
+    border-radius: 30px;
+  }
+  .minigames__item-content {
+    width: 343px;
+    padding: 29px 29px 32px 29px;
+  }
+  .minigames__content-label {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    padding-bottom: 16px;
+  }
+  .minigames__content-button {
+    width: 285px;
+    font-size: 1rem;
+  }
+  .main__games-text_altered {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 32px;
+  }
+  .footer {
+    margin-top: 49px;
+  }
+  .footer__text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

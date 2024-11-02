@@ -26,7 +26,20 @@ a {
     background-size: cover;
     background-position: center;
     height: 800px;
-    position: relative;
+    background-image: url(./images/star.png),
+        url(./images/Star1.png),
+        url(./images/Star2.png),
+        url(./images/Star3.png),
+        url(./images/Star4.png);
+    background-repeat: no-repeat, no-repeat,
+        no-repeat, no-repeat,
+        no-repeat;
+    background-size: 80%, 35px, 57px, 37px, 83px;
+    background-position: 860px -400px,
+        160px 70px,
+        63px 95px,
+        950px 540px,
+        1015px 570px;
 }
 
 
@@ -61,7 +74,7 @@ a {
     padding-bottom: 48px;
 }
 
-.top-button {
+.top__button {
     width: 247px;
     background-color: $colorBlack;
     border-radius: 60px;
@@ -79,86 +92,17 @@ a {
     //transition-delay: .3s;
 }
 
-.top-button:hover {
+.top__button:hover {
     background-color: #ffffff;
     color: #202027;
     cursor: pointer;
-    
+
 }
 
 .main {
     background-color: $colorBlack;
-    position: relative;
-}
+    overflow: hidden;
 
-.main__picture {
-    position: absolute;
-    right: -340px;
-    top: -270px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture1 {
-    position: absolute;
-    top: 70px;
-    left: 160px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture2 {
-    position: absolute;
-    top: 94px;
-    left: 64px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture3 {
-    position: absolute;
-    top: 538px;
-    left: 948px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture4 {
-    position: absolute;
-    top: 568px;
-    left: 1013px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.main__picture_upper {
-    position: absolute;
-    top: -10px;
-    left: 864px;
-    z-index: 1;
-}
-
-.main__picture_middle {
-    position: absolute;
-    top: 254px;
-    left: 1067px;
-    color: #202027;
-    z-index: 1;
-}
-
-.main__picture_lower {
-    position: absolute;
-    top: 380px;
-    left: 1225px;
-    z-index: 1;
-}
-
-.main__picture_triangle {
-    position: absolute;
-    z-index: 1;
-    top: 468px;
-    left: 1247px;
-    
 }
 
 .main__games-enter {
@@ -188,29 +132,15 @@ a {
 .main__games {
     margin-top: 94px;
     padding-bottom: 50px;
-    position: relative;
-}
-
-.main__games-picture {
-    position: absolute;
-    background-color: transparent;
-    top: 1px;
-    right: -83px;
-    z-index: 1;
-}
-
-.main__games-picture1 {
-    position: absolute;
-    background-color: transparent;
-    top: 670px;
-    left: 55px;
-}
-
-.main__games-picture2 {
-    position: absolute;
-    background-color: transparent;
-    top: 722px;
-    left: 70px;
+    /*position: relative;*/
+    background-image: url(./images/transparentStar.png),
+        url(./images/Star5.png),
+        url(./images/Star6.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 1020px 10px,
+        30px 670px,
+        45px 720px;
+    border-bottom: 1px solid $colorYellow;
 }
 
 .main__games-content {
@@ -244,8 +174,6 @@ a {
     align-items: flex-end;
     
 }*/
-
-
 
 .main__games-item:hover {
     transform: scale(1.07);
@@ -287,3 +215,107 @@ a {
     letter-spacing: 0px;
     text-align: left;
 }
+
+.main__games-text_altered {
+    color: $colorBlack;
+    width: 457px;
+    padding-bottom: 36px;
+}
+
+.minigames {
+    margin-top: 46px;
+
+}
+
+.minigames__img {
+    width: 600px;
+    border-radius: 45px;
+}
+
+.minigames__heading {
+    color: $colorWhite;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 72px;
+}
+
+.minigames__box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.minigames__item {
+    width: 1200px;
+    background-color: $colorWhite;
+    border-radius: 45px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    //flex-wrap: wrap;
+}
+
+.minigames__item_altered {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.minigames__item-content {
+    width: 600px;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+.minigames__content-label {
+    color: $colorBlack;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.minigames__content-button {
+    width: 247px;
+    border-radius: 60px;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.minigames__content-button:hover {
+    color: $colorBlack;
+    background-color: $colorWhite;
+}
+
+.footer {
+    background-color: $colorYellow;
+    
+    margin-top: 144px;
+}
+
+.footer__text {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 61px;
+    padding-bottom: 60px;
+}
+
+@import "mobile";
