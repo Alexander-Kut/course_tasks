@@ -199,6 +199,11 @@ a {
 
 .minigames {
   margin-top: 46px;
+  padding-bottom: 144px;
+  background-image: url(./images/Star7.png), url(./images/Star7.png), url(./images/Star8.png), url(./images/Star9.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 35px, 69px, 41px, 69px;
+  background-position: 1277px 50px, 1320px 86px, 1245px 3350px, 1320px 3300px;
 }
 
 .minigames__img {
@@ -274,7 +279,6 @@ a {
 
 .footer {
   background-color: #bcec30;
-  margin-top: 144px;
 }
 
 .footer__text {

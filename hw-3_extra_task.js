@@ -1,6 +1,6 @@
 //Task#1
 
-let num = prompt('Введите любое число', '17');
+let num = prompt('Пожалуйста, введите любое число', '17');
 console.log(typeof num);
 
 if (isNaN(Number(num))) {
@@ -11,6 +11,7 @@ if (isNaN(Number(num))) {
 
 
 console.log(num % 2);
+
 if (num % 2 != 0) {
     alert("Число нечетное");
 } else  {
