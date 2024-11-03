@@ -89,6 +89,7 @@ a {
     padding-bottom: 16px;
     padding-top: 16px;
     transition: 1.5s;
+    border: .5px solid $colorBlack;
     //transition-delay: .3s;
 }
 
@@ -302,6 +303,7 @@ a {
     padding-bottom: 16px;
     transition: 1.5s;
     cursor: pointer;
+    border: .5px solid $colorBlack;
 }
 
 .minigames__content-button:hover {

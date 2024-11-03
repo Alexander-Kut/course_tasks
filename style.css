@@ -71,6 +71,7 @@ a {
   padding-bottom: 16px;
   padding-top: 16px;
   transition: 1.5s;
+  border: 0.5px solid #202027;
 }
 
 .top__button:hover {
@@ -270,6 +271,7 @@ a {
   padding-bottom: 16px;
   transition: 1.5s;
   cursor: pointer;
+  border: 0.5px solid #202027;
 }
 
 .minigames__content-button:hover {
