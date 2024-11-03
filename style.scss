@@ -40,6 +40,8 @@ a {
         63px 95px,
         950px 540px,
         1015px 570px;
+    
+    position: relative;
 }
 
 
@@ -99,6 +101,37 @@ a {
     cursor: pointer;
 
 }
+
+.top__animatedstrip {
+    width: 3220px;
+    background-color: $colorYellow;
+    //margin-top: 156px;
+    position: absolute;
+    left: -25px;
+    top: 714px;
+}   
+    
+.top__animatedstrip-box {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-left: 49px;
+        padding-right: 49px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+}
+
+.top__animatedstrip-label {
+        color: $colorBlack;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+}
+
 
 .main {
     background-color: $colorBlack;
