@@ -252,7 +252,7 @@ a {
 
 .main__games-text_altered {
     color: $colorBlack;
-    width: 457px;
+    width: 497px;
     padding-bottom: 36px;
 }
 
@@ -272,7 +272,7 @@ a {
 
 .minigames__img {
     width: 600px;
-    border-radius: 45px;
+    border-radius: 30px;
 }
 
 .minigames__heading {
@@ -295,7 +295,7 @@ a {
 .minigames__item {
     width: 1200px;
     background-color: $colorWhite;
-    border-radius: 45px;
+    border-radius: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
@@ -331,6 +331,7 @@ a {
     background-color: $colorBlack;
     color: $colorWhite;
     font-size: 1.5rem;
+    font-weight: 600;
     font-family: Montserrat;
     padding-top: 16px;
     padding-bottom: 16px;
