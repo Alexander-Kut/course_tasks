@@ -118,7 +118,8 @@ a {
         padding-right: 49px;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+       // justify-content: space-between;
+        gap: 138px;
 }
 
 .top__animatedstrip-label {

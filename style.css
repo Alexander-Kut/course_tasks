@@ -96,7 +96,7 @@ a {
   padding-right: 49px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  gap: 138px;
 }
 
 .top__animatedstrip-label {
@@ -369,6 +369,27 @@ a {
     font-weight: 600;
     line-height: 142%;
     text-align: center;
+  }
+  .top__animatedstrip {
+    top: 650px;
+    left: -6px;
+  }
+  .top__animatedstrip-box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 74px;
+  }
+  .top__animatedstrip-label {
+    color: rgb(32, 32, 39);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
   }
   .minigames {
     margin-top: 48px;
