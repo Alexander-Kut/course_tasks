@@ -32,5 +32,13 @@ const myBook = {"название": "\"1984\"", "автор": "Джордж Ор
     }
   
     
-//Task#4
+// //Task#4
 
+// const array = [];
+// array.push = Math.floor(Math.random()*10+1);
+
+// for (let index = 0; index < 10; index++) {
+//     const element = array[index];
+    
+// }
+// console.log(array);
