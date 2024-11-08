@@ -5,8 +5,9 @@ let iterations = 0;
 while (k > 0) {
     console.log(k -=7);
     iterations++;
-    console.log(iterations);
-}
+    
+}   
+console.log("Количество повторений:" + iterations);
 
 
 // Task#2
@@ -32,13 +33,16 @@ const myBook = {"название": "\"1984\"", "автор": "Джордж Ор
     }
   
     
-// //Task#4
+//Task#4
 
-// const array = [];
-// array.push = Math.floor(Math.random()*10+1);
+const array = [];
+let minNumber;
+let maxNumber;
 
-// for (let index = 0; index < 10; index++) {
-//     const element = array[index];
-    
-// }
-// console.log(array);
+for (let index = 0; index < 10; index++) {
+   array.push(Math.floor(Math.random()*20)+1);
+   
+}
+
+console.log(array);
+console.log(minNumber);
