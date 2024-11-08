@@ -36,13 +36,16 @@ const myBook = {"название": "\"1984\"", "автор": "Джордж Ор
 //Task#4
 
 const array = [];
-let minNumber;
-let maxNumber;
 
 for (let index = 0; index < 10; index++) {
    array.push(Math.floor(Math.random()*20)+1);
-   
 }
-
 console.log(array);
+
+let minNumber = array[0];
+for (const element of array) {
+    if (element < minNumber) {
+        minNumber = element;
+    }
+}
 console.log(minNumber);
