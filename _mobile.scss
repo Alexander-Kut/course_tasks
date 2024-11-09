@@ -54,6 +54,28 @@
             line-height: 142%;
             text-align: center;
         }
+
+        &__animatedstrip {
+            top: 650px;
+            left: -6px;
+        }
+        &__animatedstrip-box {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 24px;
+            padding-right: 24px;
+            gap: 74px;
+        }
+        &__animatedstrip-label {
+            color: rgb(32, 32, 39);
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+        }
     }
 
     .minigames {
