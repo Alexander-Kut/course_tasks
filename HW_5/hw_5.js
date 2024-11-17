@@ -10,11 +10,11 @@
 
 // function isEven(number) {
 //     if (number % 2 === 0) {
-//         let message = 'Is even';
-//         return message;
+//         return 'Is even';
+//         
 //     } else {
-//         let message2 = 'Is odd';
-//         return message2;
+//         return 'Is odd';
+//         
 //     }
 // }
 // console.log(isEven(56));
@@ -71,51 +71,56 @@
 
 //Task#6
 
-function userFunction() {
-    let userEnter = Number(prompt('Enter any number'));
+// function userFunction() {
+//     let userEnter = Number(prompt('Enter any number'));
 
-    if (isNaN(userEnter)) {
-        return 'Переданный параметр не является числом';
+//     if (isNaN(userEnter)) {
+//         return 'Переданный параметр не является числом';
 
-    } else {
+//     } else {
         
-        return `${userEnter}  в кубе равняется: ${Math.pow(userEnter, 3)}`;
+//         return `${userEnter}  в кубе равняется: ${Math.pow(userEnter, 3)}`;
         
-    }
+//     }
     
-}
-console.log(userFunction());
+// }
+
+// console.log(userFunction());
 
 
 //Task#7
 
-// function getArea() {
-//     let circleArea = (Math.pow(this.radius, 2) * Math.PI) /2;
-//     return `Площадь ${this.label} составляет ${Math.ceil(circleArea)}`;
-//     //return circleArea;
-// }
+function getArea() {
+    let circleArea = (Math.pow(this.radius, 2) * Math.PI) /2;
 
-// function getPerimeter() {
-//     let circlePerimeter = 2 * Math.PI * this.radius;
-//     return `Периметр ${this.label} составляет ${Math.floor(circlePerimeter)}`;
-//     //return circlePerimeter;
-// }
+    return `Площадь ${this.label} круга составляет ${Math.ceil(circleArea)}`;
+    
+}
 
-// const circle1 = {
-//     label: 'первый круг',
-//     radius: 7,
-//     getArea: getArea,
-//     getPerimeter: getPerimeter
-// }
+function getPerimeter() {
+    let circlePerimeter = 2 * Math.PI * this.radius;
+    return `Периметр ${this.label} круга составляет ${Math.floor(circlePerimeter)}`;
+    
+}
+
+const circle1 = {
+    label: '1',
+    radius: 4,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+}
 
 
-// const circle2 = {
-//     label: 'второй круг',
-//     radius: 10,
-//     getArea: getArea,
-//     getPerimeter: getPerimeter
-// }
-// console.log(circle1.getArea());
-// console.log(circle1.getPerimeter());
-// console.log(circle2.getArea());
-// console.log(circle2.getPerimeter());
+const circle2 = {
+    label: '2',
+    radius: 7,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+}
+
+
+    
+    console.log(circle1.getArea());
+    console.log(circle1.getPerimeter());
+    console.log(circle2.getArea());
+    console.log(circle2.getPerimeter());

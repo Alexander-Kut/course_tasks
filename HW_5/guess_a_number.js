@@ -1,32 +1,32 @@
 
 
-function guessNumber() {
+//function guessNumber() {
 
-    const randomNumber = Math.floor(Math.random()*100 + 1);
+    const randomNumber = Math.floor(Math.random() * 100 + 1);
     console.log(randomNumber);
     let userNumber;
-    let tryNumber;
+    let counter;
     
        
     while (userNumber != randomNumber) {
         userNumber = Number(prompt('Введите любое число от 1 до 100'));
-        tryNumber++;
+        counter++;
         
         if (userNumber > randomNumber) {
-            const messageText = console.log(`Ваше число больше чем загадано. Попробуйте ещё`);
-            return messageText;
+           console.log( `Ваше число больше чем загадано. Попробуйте ещё`);
+            
 
         } else if (userNumber < randomNumber) {
-            const messageText2 = console.log(`Ваше число меньше чем загадано. Попробуйте ещё`);
-            return messageText2;
+           console.log( `Ваше число меньше чем загадано. Попробуйте ещё`);
+            
            
         } else {
-            const congratulationText = console.log(`Вы угадали. Спасибо за игру!`);
-            return congratulationText;
+            console.log( `Вы угадали. Спасибо за игру!`);
+            
         }
           
     }
-}
+//}
 
-guessNumber();    
+//console.log(guessNumber());    
 
