@@ -26,7 +26,4 @@ function guessNumber() {
         }
           
     }
-}
-
-guessNumber();    
-
+}  

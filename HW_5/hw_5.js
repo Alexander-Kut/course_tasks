@@ -1,91 +1,91 @@
-// //Task#1
+//Task#1
 
-// function minFunc (a, b) {
-//     return Math.min(a, b);
-// }
-// console.log(minFunc(8, 4));
+function minFunc (a, b) {
+    return Math.min(a, b);
+}
+console.log(minFunc(8, 4));
 
 
-// //Task#2
+//Task#2
 
-// function isEven(number) {
-//     if (number % 2 === 0) {
-//         return 'Is even';
-//         
-//     } else {
-//         return 'Is odd';
-//         
-//     }
-// }
-// console.log(isEven(56));
-// console.log(isEven(3));
-// console.log(isEven(77))
+function isEven(number) {
+    if (number % 2 === 0) {
+        return 'Is even';
+        
+    } else {
+        return 'Is odd';
+        
+    }
+}
+console.log(isEven(56));
+console.log(isEven(3));
+console.log(isEven(77))
 
 
 
 //Task#3
 
-// let squareNumber = myNumber => console.log(Math.pow(myNumber, 2));
-// squareNumber(9);
+let squareNumber = myNumber => console.log(Math.pow(myNumber, 2));
+squareNumber(9);
 
-// let squaredNumber = anotherNumber => {
-//     let result = anotherNumber ** 2
-//     return result;
-// }
-// console.log(squaredNumber(8));
-
-
-// //Task#4
-
-// function hiFunction() {
-//     let userAge = Number(prompt('How old are you?'));
-
-// if (userAge >= 13) {
-//     console.log('Welcome!');
-// } else if (userAge >= 0 && userAge <=12) {
-//     console.log('Hello, friend!');
-// } else if (userAge < 0) {    
-//     console.log('Wrong value');               
-// } else {
-//     console.log('Enter your age, please');   
-// }
-// }
-// hiFunction();
+let squaredNumber = anotherNumber => {
+    let result = anotherNumber ** 2
+    return result;
+}
+console.log(squaredNumber(8));
 
 
-// //Task#5
+//Task#4
 
-// function correctNumbers(n1, n2) {
+function hiFunction() {
+    let userAge = Number(prompt('How old are you?'));
 
-//     let num1 = Number(n1);
-//     let num2 = Number(n2);
+if (userAge >= 13) {
+    console.log('Welcome!');
+} else if (userAge >= 0 && userAge <=12) {
+    console.log('Hello, friend!');
+} else if (userAge < 0) {    
+    console.log('Wrong value');               
+} else {
+    console.log('Enter your age, please');   
+}
+}
+hiFunction();
 
-//     if (isNaN(num1) || isNaN(num2)) {
-//         return 'Одно или оба значения не являются числом';
-//
-//     } else {
-//         return num1 * num2;
-//     }
-// }
-// console.log(correctNumbers(5, '0'));
+
+//Task#5
+
+function correctNumbers(n1, n2) {
+
+    let num1 = Number(n1);
+    let num2 = Number(n2);
+
+    if (isNaN(num1) || isNaN(num2)) {
+        return 'Одно или оба значения не являются числом';
+
+    } else {
+        return num1 * num2;
+    }
+}
+console.log(correctNumbers(5, 'o'));
 
 //Task#6
 
-// function userFunction() {
-//     let userEnter = Number(prompt('Enter any number'));
+function userFunction() {
+    let userEnter = Number(prompt('Enter any number'));
 
-//     if (isNaN(userEnter)) {
-//         return 'Переданный параметр не является числом';
+    if (isNaN(userEnter)) {
+        return 'Переданный параметр не является числом';
 
-//     } else {
+    } else {
         
-//         return `${userEnter}  в кубе равняется: ${Math.pow(userEnter, 3)}`;
+        return `${userEnter}  в кубе равняется: ${Math.pow(userEnter, 3)}`;
         
-//     }
+    }
     
-// }
+}
 
-// console.log(userFunction());
+console.log(userFunction());
 
 
 //Task#7
