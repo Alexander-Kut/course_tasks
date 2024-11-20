@@ -6,8 +6,9 @@ function guessNumber() {
     console.log(randomNumber);
     let userNumber;
     let counter = 1;
-
+    alert("Игра \"Угадай число\". Попытайтесь угадать случайное число от 1 до 100");
     do {
+        
         userNumber = Number(prompt('Введите любое число от 1 до 100'));
         console.log(counter);
         counter++;
