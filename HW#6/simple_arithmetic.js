@@ -6,7 +6,7 @@ function simpleArithmetic() {
         const secondNum = () => Math.floor(Math.random() * 10 + 1);
         
         const getOperators = ["+", "-", "*", "/"];
-        const getRandomOperator = () => Math.floor(Math.random() * 4)
+        const getRandomOperator = () => Math.floor(Math.random() * 4);
         const getOperator = getOperators[getRandomOperator()];
 
         let result = null;
@@ -21,6 +21,22 @@ function simpleArithmetic() {
             result = firstNum() / secondNum();
         }
 
+        // switch (getOperator) {
+        //     case '+':
+        //         result = firstNum() + secondNum();
+        //         break;
+        //     case '-':
+        //         result = firstNum() - secondNum();
+        //         break;
+        //     case '*':
+        //         result = firstNum() * secondNum();
+        //         break;
+        //     case '/':
+        //         result = firstNum() / secondNum();
+        //         break;
+        // }
+
+
         userQuestion = `Введите ответ на пример: ${firstNum()} ${getOperator} ${secondNum()}?`;
         userAnswer = Number(prompt(userQuestion))
         console.log(result);
@@ -32,7 +48,7 @@ function simpleArithmetic() {
             alert("Wrong!");
         }
    
-}simpleArithmetic() 
+}//simpleArithmetic() 
 
 
 
