@@ -220,11 +220,10 @@ console.log(getNumber([5, 4, -8, 5, 11, -56,  4, -1, 6, -22, 9]));
         const randomArr = [];
         const newNumArr = [];       
         for (let m = 0; m < 10; m++) {
-           const randomNumber = Math.floor(Math.random() * 11);
-           randomArr.push(randomNumber);
+           randomArr.push(Math.floor(Math.random() * 10));
                 if (randomArr[m] % 2 === 0 /*&& randomArr[m] !== 0*/) {
-                           newNumArr.push(randomArr[m]);
-                        }
+                        newNumArr.push(randomArr[m]);
+                }
         } 
         console.log(randomArr);
         console.log(newNumArr);
@@ -232,9 +231,10 @@ console.log(getNumber([5, 4, -8, 5, 11, -56,  4, -1, 6, -22, 9]));
 
         // const randomArr = [];
 
+        // const randomNumber = () => Math.floor(Math.random() * 10);
+
         // for (let m = 0; m < 10; m++) {
-        //        const randomNumber = Math.floor(Math.random() * 11);
-        //        randomArr.push(randomNumber);
+        //        randomArr.push(randomNumber());
                
         // }    
         // const result = randomArr.filter(item => item % 2 === 0)
