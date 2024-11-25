@@ -21,16 +21,30 @@ function simpleArithmetic() {
             result = Math.floor(firstNum / secondNum);
         }
 
-        
+        // switch (getOperator) {
+        //     case '+':
+        //         result = firstNum() + secondNum();
+        //         break;
+        //     case '-':
+        //         result = firstNum() - secondNum();
+        //         break;
+        //     case '*':
+        //         result = firstNum() * secondNum();
+        //         break;
+        //     case '/':
+        //         result = firstNum() / secondNum();
+        //         break;
+        // }
+
+
         userQuestion = `Введите ответ на пример: ${firstNum} ${getOperator} ${secondNum}?`;
         userAnswer = Number(prompt(userQuestion));
        
+
         if (result === userAnswer) {
             alert("Right answer!")
         } else {
             alert("Wrong!");
         }
    
-        
-}
-//simpleArithmetic(); 
+}//simpleArithmetic() 

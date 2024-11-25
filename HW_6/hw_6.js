@@ -46,11 +46,12 @@ let arr = [];
 
 for (let index = 0; index < 3; index++) {
    let insertArr = [];
-   arr.push(insertArr);
-
+  
         for (let i = 0; i < 3; i++) {
             insertArr.push(1);
         }
+        
+  arr.push(insertArr);      
 }
 
 console.log(arr);
@@ -195,15 +196,6 @@ const getNumber = (numberArray) => {
 }
 console.log(getNumber([5, 4, -8, 5, 11, -56,  4, -1, 6, -22, 9]));
 
-
-    
-
-
-    // const arr = [1,2,3,4,-6,10,-5,78];
-    // const result = arr.filter(item => item < 0)
-    // 				     .sort((a, b) => a - b);
-
-    // console.log(result);
 
 
     //Task#14
