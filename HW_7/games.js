@@ -1,21 +1,21 @@
-// function turnOverText() {
-//     let userInsert;
-//     do {
-//         userInsert = prompt("Введите ваше слово!");
-//         if (userInsert === '') {
-//             alert("Вы ничего не ввели!");
+function turnOverText() {
+    let userInsert;
+    do {
+        userInsert = prompt("Введите ваше слово!");
+        if (userInsert === '') {
+            alert("Вы ничего не ввели!");
 
-//         } else if (!isNaN(userInsert)) {
-//             alert("Вы ввели не слово введите, пожалуйста, слово");
+        } else if (!isNaN(userInsert)) {
+            alert("Вы ввели не слово введите, пожалуйста, слово");
 
-//         } else {
-//             alert(userInsert.toUpperCase().split('').reverse().join(''));
-//         }
+        } else {
+            alert(userInsert.toUpperCase().split('').reverse().join(''));
+        }
 
 
-//     } while (userInsert === '' || !isNaN(userInsert));
+    } while (userInsert === '' || !isNaN(userInsert));
 
-// }
+}
 //turnOverText()
 
 
