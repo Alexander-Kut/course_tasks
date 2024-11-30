@@ -22,8 +22,8 @@ a {
   height: 800px;
   background-image: url(./images/star.png), url(./images/Star1.png), url(./images/Star2.png), url(./images/Star3.png), url(./images/Star4.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 80%, 35px, 57px, 37px, 83px;
-  background-position: 860px -400px, 160px 70px, 63px 95px, 950px 540px, 1015px 570px;
+  background-size: 85%, 35px, 57px, 37px, 83px;
+  background-position: 855px -400px, 160px 70px, 63px 95px, 950px 540px, 1015px 570px;
   position: relative;
 }
 
@@ -166,6 +166,7 @@ a {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  transition: 1.5s;
 }
 
 .main__games-content-altered {
@@ -183,7 +184,6 @@ a {
 }*/
 .main__games-item:hover {
   transform: scale(1.07);
-  transition: 1s;
   cursor: pointer;
 }
 

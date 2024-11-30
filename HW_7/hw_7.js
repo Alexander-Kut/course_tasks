@@ -12,9 +12,8 @@ console.log(textAltered);
  * которые начинаются со второй строки. Регистр символов не влияет на результат.
  */
 
-const searchElement = (elements) => {
+const searchElement = (elements, findIt) => {
     const newArray = new Array();
-    const findIt = 'яблоко';
     elements.forEach(element => {
         if (element.toLowerCase().startsWith(findIt.toLowerCase())) {
             newArray.push(element);
@@ -22,7 +21,7 @@ const searchElement = (elements) => {
     });
     return newArray;
 }
-console.log(searchElement(['Яблоки красные',  'ЯбЛОко Грин Делишес','Томаты', 'Яблочное пюре', 'яблоко Зеленое', 'Яблочный пирог', 'груша', 'Яблоко Голден']));
+console.log(searchElement(['Яблоки красные',  'ЯбЛОко Грин Делишес','Томаты', 'Яблочное пюре', 'яблоко Зеленое', 'Яблочный пирог', 'груша', 'Яблоко Голден'], 'яблоко'));
 
 
 //Task#3
@@ -86,10 +85,11 @@ console.log(randomNumber());
  */
 
 function randomArray(n) {
-    newArray = new Array();
-    let randomNum = Math.floor(Math.random() * n);
+    const newArray = [];
+    let randomNum; 
     const newArrayLenth = n / 2;
     for (let i = 0; i < newArrayLenth; i++) {
+        randomNum = Math.floor(Math.random() * n);
         newArray.push(randomNum);
         
     }
@@ -145,11 +145,8 @@ console.log(todaysDate);
 
 
 let myDate = new Date();
-let date_1 = myDate.getDate();
-let date_2 = myDate.setDate(73);
-let date1Calculated = date_1 * 24 * 3600 * 1000;
-let result = new Date(date1Calculated + date_2);
-console.log(result);
+myDate.setDate(myDate.getDate() + 73);
+console.log(myDate);
 
 
 //Task#10
