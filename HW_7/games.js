@@ -20,7 +20,7 @@
 
 
 function turnOverText() {
-    let regexp = /^[a-zA-Z,а-яА-Я]*$/;
+    let regexp = /^[a-zA-Zа-яА-Я]*$/;
     let userEnter;
 
     do {
