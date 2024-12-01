@@ -35,12 +35,12 @@ a {
         no-repeat, no-repeat,
         no-repeat;
     background-size: 80%, 35px, 57px, 37px, 83px;
-    background-position: 860px -400px,
+    background-position: 840px -420px,
         160px 70px,
         63px 95px,
         950px 540px,
         1015px 570px;
-    
+
     position: relative;
 }
 
@@ -109,28 +109,28 @@ a {
     position: absolute;
     left: -25px;
     top: 714px;
-}   
-    
+}
+
 .top__animatedstrip-box {
-        padding-top: 27px;
-        padding-bottom: 27px;
-        padding-left: 49px;
-        padding-right: 49px;
-        display: flex;
-        flex-wrap: nowrap;
-       // justify-content: space-between;
-        gap: 138px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 49px;
+    padding-right: 49px;
+    display: flex;
+    flex-wrap: nowrap;
+    // justify-content: space-between;
+    gap: 138px;
 }
 
 .top__animatedstrip-label {
-        color: $colorBlack;
-        font-family: Montserrat;
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 110%;
-        letter-spacing: 4%;
-        text-align: left;
-        text-transform: uppercase;
+    color: $colorBlack;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 
@@ -194,6 +194,8 @@ a {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    transition: 1.5s;
+    //transition-delay: 1s;
 }
 
 .main__games-content-altered {
@@ -212,7 +214,7 @@ a {
 
 .main__games-item:hover {
     transform: scale(1.07);
-    transition: 1s;
+
     cursor: pointer;
 }
 
@@ -261,14 +263,14 @@ a {
     margin-top: 46px;
     padding-bottom: 144px;
     background-image: url(./images/Star7.png),
-                    url(./images/Star7.png),
-                    url(./images/Star8.png),
-                    url(./images/Star9.png);
+        url(./images/Star7.png),
+        url(./images/Star8.png),
+        url(./images/Star9.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 35px, 69px, 41px, 69px;
     background-position: 1277px 50px, 1320px 86px,
-                         1245px 3350px, 1320px 3300px;
-    
+        1245px 3350px, 1320px 3300px;
+
 }
 
 .minigames__img {
@@ -306,7 +308,7 @@ a {
 .minigames__item_altered {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .minigames__item-content {
@@ -348,7 +350,7 @@ a {
 
 .footer {
     background-color: $colorYellow;
-    
+
 }
 
 .footer__text {
