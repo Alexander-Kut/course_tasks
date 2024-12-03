@@ -22,25 +22,25 @@ function rockScissorsPaperGame() {
             playerEnter = prompt("Введите, пожалуйста, любое из слов: 'камень', 'ножницы' или 'бумага'");
         if (regexp.test(playerEnter)) {
             if (playerEnter.toLowerCase() === computerChoice.toLowerCase()) {
-                    alert(`Computer chose ${computerChoice}`);
-                    alert(`Player chose: ${playerEnter}`);
+                    alert(`Выбор компьютера: ${computerChoice}`);
+                    alert(`Выбор игрока: ${playerEnter}`);
                     alert('Draw!');
                 } else if (playerEnter.toLowerCase() === 'бумага' && computerChoice.toLowerCase() === 'ножницы') {
-                    alert(`Computer chose ${computerChoice}`);
-                    alert(`Player chose: ${playerEnter}`);
+                    alert(`Выбор компьютера: ${computerChoice}`);
+                    alert(`Выбор игрока: ${playerEnter}`);
                     alert("Computer won!");
 
                 } else if (playerEnter.toLowerCase() === 'камень' && computerChoice.toLowerCase() === 'бумага') {
-                    alert(`Computer chose ${computerChoice}`);
+                    alert(`Выбор компьютера: ${computerChoice}`);
                     alert(`Player chose: ${playerEnter}`);
                     alert("Computer won");
                 } else if (playerEnter.toLowerCase() === 'ножницы' && computerChoice.toLowerCase() === 'камень') {
-                    alert(`Computer chose ${computerChoice}`);
-                    alert(`Player chose: ${playerEnter}`);
+                    alert(`Выбор компьютера: ${computerChoice}`);
+                    alert(`Выбор игрока: ${playerEnter}`);
                     alert("Computer won!");
                 } else {
-                    alert(`Computer chose ${computerChoice}`);
-                    alert(`Player chose: ${playerEnter}`);
+                    alert(`Выбор компьютера: ${computerChoice}`);
+                    alert(`Выбор игрока: ${playerEnter}`);
                     alert("Player won!");
                 }
         } else {
