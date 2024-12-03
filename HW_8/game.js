@@ -1,4 +1,4 @@
-function rockScissorsPaperGame() {
+function playerVersusPcGame() {
     
     const randomItems = ["камень", "ножницы", "бумага"];
 
