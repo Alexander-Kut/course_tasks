@@ -8,12 +8,12 @@ function rockScissorsPaperGame() {
 
     switch (computerChoice) {
         case 'камень':
-            computerChoice === 'камень';
+            
             break;
         case 'бумага':
-            computerChoice === 'бумага';
+           
             break;
-        default: computerChoice === 'ножницы'
+        default: 'ножницы'
             break;
     }
     const regexp = /^[а-яА-Я]*$/;
