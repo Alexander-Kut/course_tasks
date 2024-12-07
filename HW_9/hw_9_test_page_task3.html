@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Задание 3. Динамическое измение текста</h1>
+    <button class="btn">Изменить текст</button>
+    <script>
+        const btn = document.querySelector('.btn');
+        const title = document.querySelector('.title');
+        
+        btn.addEventListener('click', () => {
+            title.textContent = 'Привет, мир!';
+                
+        });
+    </script>
+</body>
+</html>
