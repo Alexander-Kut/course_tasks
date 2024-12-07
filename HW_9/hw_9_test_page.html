@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Задание 1 скрыть-показать заголовок.</h1>
+    <button class="button">Скрыть заголовок</button>
+
+    <p class="text">Задание 2. Изменить цвет текста в абзаце. <br>
+        Брендан Эйх или Айк — американский программист, создатель языка программирования JavaScript. 
+        С 1995 года работал в компании Netscape; участвовал в основании Mozilla, до 2014 года был главным инженером в Mozilla Corporation.     </p>
+    <button id="change_text">Изменить текст</button>
+
+    <script>
+        const title = document.querySelector('.title');
+        const button = document.querySelector('.button');
+        button.addEventListener('click', function () {
+            title.style.display = title.style.display === 'none'? 'block' : 'none';
+        });
+    </script>
+
+    <script>
+        const text = document.querySelector('.text');
+        const change_text = document.querySelector('#change_text');
+        change_text.addEventListener('click', function () {
+            text.style.color = 'blue';
+        });      
+
+    </script>
+    
+</body>
+</html>
