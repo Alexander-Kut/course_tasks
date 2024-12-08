@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Задание 4. Поиск и изменение элементов по классу</h1>
+    <h2 class="description">Найти все элементы с классом description и изменить их текст на «Измененный текст»</h2>
+    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita recusandae repellat ab quis neque facilis quo doloremque. Numquam, nisi nulla, error quis qui neque laudantium reprehenderit architecto maiores, voluptatibus mollitia.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <h3 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae similique necessitatibus culpa?</h3>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt nemo, explicabo hic earum, commodi placeat enim quis doloremque sequi laudantium, autem ducimus quos tempora!</p>
+    <button id="change_btn">Перебрать текст</button>
+    <script>
+        const descriptionElClass = document.querySelectorAll('.description');
+        const changeBtn = document.querySelector('#change_btn');
+        
+        changeBtn.addEventListener('click', () => {
+
+            descriptionElClass.forEach(element => {
+                element.textContent = 'Измененный текст';
+            });
+        });
+   
+    </script>
+</body>
+</html>

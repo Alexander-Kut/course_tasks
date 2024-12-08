@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Задание 5. Работа с querySelectorAll</h1>
+    <div class="items">
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, inventore!</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique dolore voluptas asperiores accusamus blanditiis libero autem totam architecto reprehenderit!</p>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam.</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium earum minus.</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum recusandae inventore corrupti rem voluptates molestias.</p>
+        <button class="btn">Нажмите меня</button>
+
+        <h3>Задание 6. Добавление нового элемента в DOM</h3>
+
+        <button class="btn-create">Добавить элемент</button>
+    </div>
+    <script>
+       const descriptionElClass = document.querySelectorAll('.description');
+       const btn = document.querySelector('.btn');
+
+       //console.log(descriptionElClass);
+
+       btn.addEventListener('click', () => {
+       descriptionElClass.forEach(element => {
+        element.textContent = 'Новый текст';
+       });
+    });
+    </script>
+    
+    <script>
+        
+        const btnCreate = document.querySelector('.btn-create');
+        const itemsEl = document.querySelector(".items");
+
+        
+
+        btnCreate.addEventListener('click', () => {
+        const textEl = document.createElement('p');
+        textEl.textContent = 'Новый абзац';
+        textEl.classList.add('text');
+
+        itemsEl.appendChild(textEl);
+
+        });
+    </script>
+</body>
+</html>
