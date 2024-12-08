@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="title">Задание 7. Удаление элемента</h2>
+    <p class="description">Создать кнопку, которая удаляет первый элемент c тегом р, с классом description</p>
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nemo adipisci ullam, corrupti voluptas assumenda hic. Velit quas vel pariatur repellendus deserunt architecto optio.</p>
+    <p class="description">В HTML создайте несколько абзацев с тегом p, некоторые из них должны иметь класс description.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, repudiandae?</p>
+    <p class="description">Используйте метод querySelector для поиска первого элемента с классом description.</p>
+    <p class="description">Используйте метод remove для удаления этого элемента при нажатии на кнопку.</p>
+
+    <button id="remove-btn">Удалить элемент</button>
+
+    <script>
+        const removeBtn = document.querySelector('#remove-btn');
+        
+
+        removeBtn.addEventListener('click', function () {
+            const descriptionEl = document.querySelector('.description');
+            descriptionEl.firstChild.remove();
+        });
+    </script>
+</body>
+</html>
