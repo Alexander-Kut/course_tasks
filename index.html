@@ -146,7 +146,7 @@
                     <div class="minigames__item-content">
                         <h3 class="minigames__content-label" >Генератор<br> случайных<br> цветов</h3>
                         <p class="main__games-text main__games-text_altered">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="minigames__content-button">Играть!</button>
+                        <button id="click_button" class="minigames__content-button">Играть!</button>
                     </div>
                 </article>
             </div>
@@ -161,7 +161,16 @@
         <script src="./HW_6/simple_arithmetic.js"></script> 
         <script src="./HW_7/games.js"></script>
         <script src="./HW_8/rock_scissors_paper.js"></script>
-        
+        <script>
+            const mainEl = document.querySelector('.main');
+            const btnEl = document.querySelector('#click_button');
+            btnEl.addEventListener('click', () => {
+                const r = Math.random() * 256;
+                const g = Math.random() * 256;
+                const b = Math.random() * 256;
+                mainEl.style.backgroundColor = `rgba(${r}, ${g}, ${b})`;
+            });
+        </script>
 </body>
 
 </html>
