@@ -3,7 +3,6 @@ $colorYellow: #bcec30;
 $colorLightYellow: #e1ff8f;
 $colorWhite: #ffffff;
 
-
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +14,6 @@ html {
 
 body {
     font-family: Montserrat;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -44,8 +42,6 @@ a {
 
     position: relative;
 }
-
-
 
 .center {
     padding-left: calc(50% - 600px);
@@ -140,6 +136,7 @@ a {
     flex-wrap: nowrap;
     // justify-content: space-between;
     gap: 138px;
+    
 }
 
 .top__animatedstrip-label {
@@ -153,17 +150,22 @@ a {
     text-transform: uppercase;
 }
 
+.top__animatedstrip-label {
+    background-image: url(./images/Starbig.png);
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: right;
+}
 
 .main {
     background-color: $colorBlack;
     overflow: hidden;
-}
+    scroll-behavior: smooth;
 
-.main__games-enter {
+    &__games-enter {
     padding-bottom: 72px;
-}
-
-.main__games-heading {
+    }
+    &__games-heading {
     color: $colorWhite;
     font-family: Montserrat;
     font-size: 4rem;
@@ -171,9 +173,8 @@ a {
     line-height: 78px;
     letter-spacing: 0;
     text-align: left;
-}
-
-.main__games-text {
+    }
+    &__games-text {
     color: $colorWhite;
     font-family: Montserrat;
     font-size: 24px;
@@ -181,9 +182,8 @@ a {
     line-height: 32px;
     text-align: left;
     width: 788px;
-}
-
-.main__games {
+    }
+    &__games {
     margin-top: 94px;
     padding-bottom: 50px;
     /*position: relative;*/
@@ -195,16 +195,14 @@ a {
         30px 670px,
         45px 720px;
     border-bottom: 1px solid $colorYellow;
-}
-
-.main__games-content {
+    }
+    &__games-content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
     row-gap: 32px;
-}
-
-.main__games-item {
+    }
+    &__games-item {
     width: 378px;
     border-radius: 30px;
     background-color: $colorWhite;
@@ -215,68 +213,60 @@ a {
     align-self: flex-start;
     transition: 1.5s;
     //transition-delay: 1s;
-}
-
-.main__games-content-altered {
+    }
+    &__games-content-altered {
     display: flex;
     flex-direction: column;
     gap: 32px;
     z-index: 2;
+    }
+    &__games-item:hover {
+        transform: scale(1.07);
+        cursor: pointer;
+    }
+    &__games-img {
+        border-radius: 30px;
+    }
+    &__games-itemname {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 28px;
+        padding-bottom: 36px;
+    }
+    &__games-itemtext {
+        color: $colorBlack;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: center;
+        border-radius: 53px;
+        background: rgb(247, 247, 247);
+        width: 108px;
+        padding: 16px 8px 16px 8px;
+    }
+    &__games-itemlabel {
+        padding-top: 16px;
+        color: $colorBlack;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__games-text_altered {
+        color: $colorBlack;
+        width: 497px;
+        padding-bottom: 36px;
+    }
 }
 
 /*.main__games-item_altered {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
 }*/
-
-.main__games-item:hover {
-    transform: scale(1.07);
-
-    cursor: pointer;
-}
-
-.main__games-img {
-    border-radius: 30px;
-}
-
-.main__games-itemname {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 28px;
-    padding-bottom: 36px;
-}
-
-.main__games-itemtext {
-    color: $colorBlack;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 110%;
-    text-align: center;
-    border-radius: 53px;
-    background: rgb(247, 247, 247);
-    width: 108px;
-    padding: 16px 8px 16px 8px;
-}
-
-.main__games-itemlabel {
-    padding-top: 16px;
-    color: $colorBlack;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-    letter-spacing: 0px;
-    text-align: left;
-}
-
-.main__games-text_altered {
-    color: $colorBlack;
-    width: 497px;
-    padding-bottom: 36px;
-}
 
 .minigames {
     margin-top: 46px;
@@ -289,15 +279,12 @@ a {
     background-size: 35px, 69px, 41px, 69px;
     background-position: 1277px 50px, 1320px 86px,
         1245px 3350px, 1320px 3300px;
-
-}
-
-.minigames__img {
+    
+        &__img {
     width: 600px;
     border-radius: 30px;
-}
-
-.minigames__heading {
+    }
+    &__heading {
     color: $colorWhite;
     font-family: Montserrat;
     font-size: 64px;
@@ -306,15 +293,13 @@ a {
     letter-spacing: 0px;
     text-align: left;
     margin-bottom: 72px;
-}
-
-.minigames__box {
+    }
+    &__box {
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
-
-.minigames__item {
+    }
+    &__item {
     width: 1200px;
     background-color: $colorWhite;
     border-radius: 30px;
@@ -322,21 +307,17 @@ a {
     display: flex;
     flex-direction: row-reverse;
     //flex-wrap: wrap;
-}
-
-.minigames__item_altered {
+    }
+    &__item_altered {
     display: flex;
     flex-direction: row;
-
-}
-
-.minigames__item-content {
+    }
+    &__item-content {
     width: 600px;
     padding: 48px;
     box-sizing: border-box;
-}
-
-.minigames__content-label {
+    }
+    &__content-label {
     color: $colorBlack;
     font-family: Montserrat;
     font-size: 48px;
@@ -345,9 +326,8 @@ a {
     letter-spacing: 0px;
     text-align: left;
     padding-bottom: 24px;
-}
-
-.minigames__content-button {
+    }
+    &__content-button {
     width: 247px;
     border-radius: 60px;
     background-color: $colorBlack;
@@ -360,19 +340,17 @@ a {
     transition: 1.5s;
     cursor: pointer;
     border: .5px solid $colorBlack;
-}
-
-.minigames__content-button:hover {
+    }
+    &__content-button:hover {
     color: $colorBlack;
     background-color: $colorWhite;
+    }
 }
 
 .footer {
     background-color: $colorYellow;
-
-}
-
-.footer__text {
+    
+    &__text {
     color: rgb(0, 0, 0);
     font-family: Montserrat;
     font-size: 24px;
@@ -382,6 +360,7 @@ a {
     text-align: center;
     padding-top: 61px;
     padding-bottom: 60px;
+    }
 }
 
 @import "mobile";
