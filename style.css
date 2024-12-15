@@ -86,7 +86,23 @@ a {
   background-color: #bcec30;
   position: absolute;
   left: -25px;
-  top: 714px;
+  top: 713px;
+}
+
+@keyframes animatedstrip {
+  from {
+    right: 3220px;
+  }
+  to {
+    left: -3220px;
+  }
+}
+.top__animatedstrip {
+  animation-name: animatedstrip;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
 }
 
 .top__animatedstrip-box {
