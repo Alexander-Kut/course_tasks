@@ -15,6 +15,7 @@ html {
 
 body {
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -156,7 +157,6 @@ a {
 .main {
     background-color: $colorBlack;
     overflow: hidden;
-
 }
 
 .main__games-enter {

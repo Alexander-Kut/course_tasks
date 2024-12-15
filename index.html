@@ -171,6 +171,13 @@
                 mainEl.style.backgroundColor = `rgba(${r}, ${g}, ${b})`;
             });
         </script>
+        <script>
+            const buttonEl = document.querySelector('#letsgo_btn');
+            const h2 = document.querySelector('.main__games-heading');
+            buttonEl.addEventListener('click', function () {
+            h2.scrollIntoView({ behavior:'smooth'});
+});
+        </script>
 </body>
 
 </html>
