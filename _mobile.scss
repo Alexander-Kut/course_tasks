@@ -56,7 +56,7 @@
         }
 
         &__animatedstrip {
-            top: 650px;
+            top: 634px;
             left: -6px;
         }
         &__animatedstrip-box {
@@ -64,7 +64,7 @@
             padding-bottom: 16px;
             padding-left: 24px;
             padding-right: 24px;
-            gap: 74px;
+            gap: 27px;
         }
         &__animatedstrip-label {
             color: rgb(32, 32, 39);
@@ -75,6 +75,23 @@
             //letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
+        }
+        &__animatedstrip-label {
+            background-image: url(./images/Starbig.png);
+            background-repeat: no-repeat;
+            background-size: 19px;
+            background-position: right;
+        }
+        &__animatedstrip-label {
+            color: $colorBlack;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 110%;
+            //letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+            padding-right: 47px;
         }
     }
 
@@ -142,7 +159,6 @@
 
     .footer {
         
-
         &__text {
             font-size: 1rem;
             font-weight: 600;

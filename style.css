@@ -100,7 +100,7 @@ a {
 }
 .top__animatedstrip {
   animation-name: animatedstrip;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: normal;
@@ -371,7 +371,7 @@ a {
     text-align: center;
   }
   .top__animatedstrip {
-    top: 650px;
+    top: 634px;
     left: -6px;
   }
   .top__animatedstrip-box {
@@ -379,7 +379,7 @@ a {
     padding-bottom: 16px;
     padding-left: 24px;
     padding-right: 24px;
-    gap: 74px;
+    gap: 27px;
   }
   .top__animatedstrip-label {
     color: rgb(32, 32, 39);
@@ -389,6 +389,22 @@ a {
     line-height: 110%;
     text-align: left;
     text-transform: uppercase;
+  }
+  .top__animatedstrip-label {
+    background-image: url(./images/Starbig.png);
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: right;
+  }
+  .top__animatedstrip-label {
+    color: #202027;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 47px;
   }
   .minigames {
     margin-top: 48px;
