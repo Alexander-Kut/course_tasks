@@ -5,6 +5,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -91,10 +92,10 @@ a {
 
 @keyframes animatedstrip {
   from {
-    right: 3220px;
+    transform: translateX(100%);
   }
   to {
-    left: -3220px;
+    transform: translateX(-100%);
   }
 }
 .top__animatedstrip {
@@ -112,7 +113,7 @@ a {
   padding-right: 49px;
   display: flex;
   flex-wrap: nowrap;
-  gap: 138px;
+  gap: 51px;
 }
 
 .top__animatedstrip-label {
@@ -121,9 +122,9 @@ a {
   font-size: 30px;
   font-weight: 700;
   line-height: 110%;
-  letter-spacing: 4%;
   text-align: left;
   text-transform: uppercase;
+  padding-right: 87px;
 }
 
 .top__animatedstrip-label {
@@ -136,7 +137,6 @@ a {
 .main {
   background-color: #202027;
   overflow: hidden;
-  scroll-behavior: smooth;
 }
 .main__games-enter {
   padding-bottom: 72px;
@@ -387,7 +387,6 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 110%;
-    letter-spacing: 4%;
     text-align: left;
     text-transform: uppercase;
   }
