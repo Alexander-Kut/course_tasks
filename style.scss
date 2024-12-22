@@ -101,7 +101,7 @@ a {
 }
 
 .top__animatedstrip {
-    width: 3220px;
+   // width: 100vw;
     background-color: $colorYellow;
     //margin-top: 156px;
     position: absolute;
@@ -110,7 +110,7 @@ a {
 
 }
 
-@keyframes animatedstrip {
+@keyframes animatedstripToLeft {
     from {
         transform: translateX(100%);
 
@@ -121,15 +121,16 @@ a {
     }
 }
 
-.top__animatedstrip {
-    animation-name: animatedstrip;
-    animation-duration: 30s;
+.top__animatedstrip-box {
+    animation-name: animatedstripToLeft;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
 }
 
 .top__animatedstrip-box {
+    width: 3220px;
     padding-top: 27px;
     padding-bottom: 27px;
     padding-left: 49px;

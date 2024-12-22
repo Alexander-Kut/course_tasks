@@ -331,7 +331,7 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .main__games {
+  .games {
     display: none;
   }
   .top {
@@ -371,7 +371,7 @@ a {
     text-align: center;
   }
   .top__animatedstrip {
-    top: 634px;
+    top: 649px;
     left: -6px;
   }
   .top__animatedstrip-box {
@@ -382,15 +382,6 @@ a {
     gap: 27px;
   }
   .top__animatedstrip-label {
-    color: rgb(32, 32, 39);
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 110%;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  .top__animatedstrip-label {
     background-image: url(./images/Starbig.png);
     background-repeat: no-repeat;
     background-size: 19px;
@@ -399,7 +390,7 @@ a {
   .top__animatedstrip-label {
     color: #202027;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 110%;
     text-align: left;
@@ -424,32 +415,32 @@ a {
     text-align: left;
     margin-bottom: 48px;
   }
-  .minigames__item {
+  .minigame {
     width: 343px;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
   }
-  .minigames__img {
+  .minigame__img {
     width: 343px;
     border-radius: 30px;
   }
-  .minigames__item-content {
+  .minigame__content {
     width: 343px;
     padding: 29px 29px 32px 29px;
   }
-  .minigames__content-label {
+  .minigame__content-label {
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
     text-align: left;
     padding-bottom: 16px;
   }
-  .minigames__content-button {
+  .minigame__content-button {
     width: 285px;
     font-size: 1rem;
   }
-  .main__games-text_altered {
+  .minigame__text_altered {
     width: 285px;
     font-size: 16px;
     font-weight: 400;
