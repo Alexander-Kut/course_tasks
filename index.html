@@ -22,7 +22,7 @@
             <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
                 <strong>«Поехали!»</strong> и <strong>приступай</strong>.
             </p>
-            <button class="top__button">Поехали!</button>
+            <button id="letsgo_btn" class="top__button">Поехали!</button>
             <div class="top__animatedstrip">
                 <div class="top__animatedstrip-box">
                     <span class="top__animatedstrip-label">Викторина</span>
@@ -34,65 +34,77 @@
                 </div>
             </div>
         </section>
-        <section class="main__games center">
-            <div class="main__games-enter">
-                <h2 class="main__games-heading">Об играх</h2>
-                <p class="main__games-text">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них
+        <section class="games center">
+            <div class="games__enter">
+                <h2 class="games__heading">Об играх</h2>
+                <p class="games__text">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них
                     может поиграть каждый.
                     Все игры доступны для пользования.</p>
             </div>
 
-            <div class="main__games-content">
-                <div class="main__games-content-altered">
-                    <a href="#guess_a_number" class="main__games-item main__games-item_altered">
+            <div class="games__content">
+                <div class="games__content-altered">
+                    <article class="game game_altered">
+                        <a href="#guess_a_number" >
+                        
+                            <img class="game__img" src="./images/cover_1.jpeg" alt="guess a number">
 
-                        <img class="main__games-img" src="./images/cover_1.jpeg" alt="guess a number">
-
-                        <div class="main__games-itemname">
-                            <p class="main__games-itemtext">Игра № 1</p>
-                            <h3 class="main__games-itemlabel">Угадай число</h3>
-                        </div>
-                    </a>
-                    <a href="#rock_paper_scisors" class="main__games-item main__games-item_altered">
-                        <img class="main__games-img" src="./images/cover_4.jpeg" alt="rock paper scisors">
-
-                        <div class="main__games-itemname">
-                            <p class="main__games-itemtext">Игра № 4</p>
-                            <h3 class="main__games-itemlabel">Камень, ножницы,<br> бумага</h3>
-                        </div>
-                    </a>
+                            <div class="game__name">
+                                <p class="game__text">Игра № 1</p>
+                                <h3 class="game__label">Угадай число</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="game game_altered">
+                        <a href="#rock_paper_scisors" >  
+                                <img class="game__img" src="./images/cover_4.jpeg" alt="rock paper scisors">
+                                <div class="game__name">
+                                    <p class="game__text">Игра № 4</p>
+                                    <h3 class="game__label">Камень, ножницы,<br> бумага</h3>
+                                </div>
+                            
+                        </a>
+                    </article>
                 </div>
-                <div class="main__games-content-altered">
-                    <a href="#simple_arithmetic" class="main__games-item main__games-item_altered">
-                        <img class="main__games-img" src="./images/cover_2.jpeg" alt="simple arithmetic">
-                        <div class="main__games-itemname">
-                            <p class="main__games-itemtext">Игра № 2</p>
-                            <h3 class="main__games-itemlabel">Простая арифметика</h3>
-                        </div>
-                    </a>
-                    <a href="#quiz" class="main__games-item main__games-item_altered">
-                        <img class="main__games-img" src="./images/cover_5.jpeg" alt="quiz">
-                        <div class="main__games-itemname">
-                            <p class="main__games-itemtext">Игра № 5</p>
-                            <h3 class="main__games-itemlabel">Простая викторина</h3>
-                        </div>
-                    </a>
+                <div class="games__content-altered">
+                    <article class="game game_altered">
+                        <a href="#simple_arithmetic" >
+                            <img class="game__img" src="./images/cover_2.jpeg" alt="simple arithmetic">
+                            <div class="game__name">
+                                <p class="game__text">Игра № 2</p>
+                                <h3 class="game__label">Простая арифметика</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="game game_altered">
+                        <a href="#quiz" >
+                            <img class="game__img" src="./images/cover_5.jpeg" alt="quiz">
+                            <div class="game__name">
+                                <p class="game__text">Игра № 5</p>
+                                <h3 class="game__label">Простая викторина</h3>
+                            </div>
+                        </a>
+                    </article>
                 </div>
-                <div class="main__games-content-altered">
-                    <a href="#text" class="main__games-item main__games-item_altered">
-                        <img class="main__games-img" src="./images/cover_3.jpeg" alt="text">
-                        <div class="main__games-itemname">
-                            <p class="main__games-itemtext">Игра № 3</p>
-                            <h3 class="main__games-itemlabel">Переверни текст</h3>
-                        </div>
-                    </a>
-                    <a href="#color_generator" class="main__games-item main__games-item_altered">
-                        <img class="main__games-img" src="./images/cover_6.jpeg" alt="color generator">
-                        <div class="main__games-itemname">
-                            <p class="main__games-itemtext">Игра № 6</p>
-                            <h3 class="main__games-itemlabel">Генератор случайных цветов</h3>
-                        </div>
-                    </a>
+                <div class="games__content-altered">
+                    <article class="game game_altered">
+                        <a href="#text">
+                            <img class="game__img" src="./images/cover_3.jpeg" alt="text">
+                            <div class="game__name">
+                                <p class="game__text">Игра № 3</p>
+                                <h3 class="game__label">Переверни текст</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="game game_altered">
+                        <a href="#color_generator" >
+                            <img class="game__img" src="./images/cover_6.jpeg" alt="color generator">
+                            <div class="game__name">
+                                <p class="game__text">Игра № 6</p>
+                                <h3 class="game__label">Генератор случайных цветов</h3>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </div>
 
@@ -100,53 +112,53 @@
         <section class="minigames center">
             <h2 class="minigames__heading">Мини-игры</h2>
             <div class="minigames__box">
-                <article class="minigames__item" id="guess_a_number">
-                    <img class="minigames__img" src="./images/number.jpeg" alt="Угадай число">
-                    <div class="minigames__item-content">
-                        <h3 class="minigames__content-label" >Угадай число</h3>
-                        <p class="main__games-text main__games-text_altered">Попробуй угадать случайное<br> число от 1 до 100.</p>
-                        <button onclick="guessNumber()" class="minigames__content-button">Играть!</button>
+                <article class="minigame" id="guess_a_number">
+                    <img class="minigame__img" src="./images/number.jpeg" alt="Угадай число">
+                    <div class="minigame__content">
+                        <h3 class="minigame__content-label" >Угадай число</h3>
+                        <p class="minigame__text minigame__text_altered">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                        <button onclick="guessNumber()" class="minigame__content-button">Играть!</button>
                     </div>
                 </article>
-                <article class="minigames__item minigames__item_altered" id="simple_arithmetic">
-                    <img class="minigames__img" src="./images/arithmetic.jpeg" alt="Простая арифметика">
-                    <div class="minigames__item-content">
-                        <h3 class="minigames__content-label" >Простая арифметика</h3>
-                        <p class="main__games-text main__games-text_altered">Попробуй решить простые арифметические задачи.</p>
-                        <button onclick="simpleArithmetic()" class="minigames__content-button">Играть!</button>
+                <article class="minigame minigame_altered" id="simple_arithmetic">
+                    <img class="minigame__img" src="./images/arithmetic.jpeg" alt="Простая арифметика">
+                    <div class="minigame__content">
+                        <h3 class="minigame__content-label" >Простая арифметика</h3>
+                        <p class="minigame__text minigame__text_altered">Попробуй решить простые арифметические задачи.</p>
+                        <button onclick="simpleArithmetic()" class="minigame__content-button">Играть!</button>
                     </div>
                 </article>
-                <article class="minigames__item" id="text">
-                    <img class="minigames__img" src="./images/text.jpeg" alt="Переверни текст">
-                    <div class="minigames__item-content">
-                        <h3 class="minigames__content-label" >Переверни текст</h3>
-                        <p class="main__games-text main__games-text_altered">Попробуй ввести текст, который<br> будет перевернут.</p>
-                        <button onclick="turnOverText()" class="minigames__content-button">Играть!</button>
+                <article class="minigame" id="text">
+                    <img class="minigame__img" src="./images/text.jpeg" alt="Переверни текст">
+                    <div class="minigame__content">
+                        <h3 class="minigame__content-label" >Переверни текст</h3>
+                        <p class="minigame__text minigame__text_altered">Попробуй ввести текст, который<br> будет перевернут.</p>
+                        <button onclick="turnOverText()" class="minigame__content-button">Играть!</button>
                     </div> 
                 </article>
-                <article class="minigames__item minigames__item_altered" id="quiz">
-                    <img class="minigames__img" src="./images/quiz.jpeg" alt="Викторина">
-                    <div class="minigames__item-content">
-                        <h3 class="minigames__content-label" >Викторина</h3>
-                        <p class="main__games-text main__games-text_altered">Отвечай на вопросы викторины с вариантами ответов.</p>
-                        <button onclick="simpleQuizGame()" class="minigames__content-button">Играть!</button>
+                <article class="minigame minigame_altered" id="quiz">
+                    <img class="minigame__img" src="./images/quiz.jpeg" alt="Викторина">
+                    <div class="minigame__content">
+                        <h3 class="minigame__content-label" >Викторина</h3>
+                        <p class="minigame__text minigame__text_altered">Отвечай на вопросы викторины с вариантами ответов.</p>
+                        <button onclick="simpleQuizGame()" class="minigame__content-button">Играть!</button>
                     </div>
                 </article>
-                <article class="minigames__item " id="rock_paper_scisors">
-                    <img class="minigames__img" src="./images/rock_paper.jpeg" alt="Камень, ножницы, бумага">
-                    <div class="minigames__item-content">
-                        <h3 class="minigames__content-label" >Камень,<br> ножницы,<br> бумага</h3>
-                        <p class="main__games-text main__games-text_altered">Сыграй в популярную игру<br> против компьютера.</p>
-                        <button onclick="rockScissorsPaperGame()" class="minigames__content-button">Играть!</button>
+                <article class="minigame " id="rock_paper_scisors">
+                    <img class="minigame__img" src="./images/rock_paper.jpeg" alt="Камень, ножницы, бумага">
+                    <div class="minigame__content">
+                        <h3 class="minigame__content-label" >Камень,<br> ножницы,<br> бумага</h3>
+                        <p class="minigame__text minigame__text_altered">Сыграй в популярную игру<br> против компьютера.</p>
+                        <button onclick="rockScissorsPaperGame()" class="minigame__content-button">Играть!</button>
                     </div>
                 </article>
                 
-                <article class="minigames__item minigames__item_altered" id="color_generator">
-                    <img class="minigames__img" src="./images/color_generator.jpeg" alt="Генератор случайных цветов">
-                    <div class="minigames__item-content">
-                        <h3 class="minigames__content-label" >Генератор<br> случайных<br> цветов</h3>
-                        <p class="main__games-text main__games-text_altered">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="minigames__content-button">Играть!</button>
+                <article class="minigame minigame_altered" id="color_generator">
+                    <img class="minigame__img" src="./images/color_generator.jpeg" alt="Генератор случайных цветов">
+                    <div class="minigame__content">
+                        <h3 class="minigame__content-label" >Генератор<br> случайных<br> цветов</h3>
+                        <p class="minigame__text minigame__text_altered">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                        <button id="click_button" class="minigame__content-button">Играть!</button>
                     </div>
                 </article>
             </div>
@@ -161,7 +173,30 @@
         <script src="./HW_6/simple_arithmetic.js"></script> 
         <script src="./HW_7/games.js"></script>
         <script src="./HW_8/rock_scissors_paper.js"></script>
-        
+        <script>
+            const mainEl = document.querySelector('.main');
+            const btnEl = document.querySelector('#click_button');
+            btnEl.addEventListener('click', () => {
+                const r = Math.random() * 256;
+                const g = Math.random() * 256;
+                const b = Math.random() * 256;
+                mainEl.style.backgroundColor = `rgba(${r}, ${g}, ${b})`;
+            });
+        </script>
+        <script>
+            const buttonEl = document.querySelector('#letsgo_btn');
+            const h2 = document.querySelector('.games__heading');
+            buttonEl.addEventListener('click', function () {
+            h2.scrollIntoView({ behavior:'smooth'});
+            });
+        </script>
+        <!-- <script>
+            const minibuttonEl = document.querySelector('#letsgo_btn');
+            const sectionEl = document.querySelector('.minigames');
+            minibuttonEl.addEventListener('click', function () {
+            sectionEl.scrollIntoView({ behavior:'smooth'});
+            });
+        </script> -->
 </body>
 
 </html>

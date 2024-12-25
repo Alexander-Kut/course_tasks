@@ -26,7 +26,7 @@ function turnOverText() {
     do {
         userEnter = prompt("Введите ваше слово!");
         if (regexp.test(userEnter)) {
-            alert(userEnter.toUpperCase().split('').reverse().join(''));
+            alert(userEnter.split('').reverse().join(''));
         } else {
             alert("Вы ввели не слово введите, пожалуйста, слово");
         }
