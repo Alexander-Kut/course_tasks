@@ -99,9 +99,9 @@ a {
 }
 .top__animatedstrip-box {
   animation-name: animatedstripToLeft;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: ease-out;
   animation-direction: normal;
 }
 
