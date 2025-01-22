@@ -16,12 +16,6 @@ for (let i = 1; i <=5; i++) {
 
 //Task#3
 
-// let num = 7;
-// while (num <= 22) {
-//     console.log(num - 1);
-//     ++num;
-// }
-
 for (let num = 7; num <= 22; num++) {
     console.log(num);
 }

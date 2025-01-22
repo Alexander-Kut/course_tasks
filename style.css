@@ -142,7 +142,6 @@ a {
 .games {
   margin-top: 94px;
   padding-bottom: 50px;
-  /*position: relative;*/
   background-image: url(./images/transparentStar.png), url(./images/Star5.png), url(./images/Star6.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 1020px 10px, 30px 670px, 45px 720px;
@@ -198,12 +197,6 @@ a {
   flex-direction: column;
   align-self: flex-start;
   transition: 1.5s;
-  /*game_altered {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-  }
-  */
 }
 .game:hover {
   transform: scale(1.07);
