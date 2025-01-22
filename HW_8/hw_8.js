@@ -32,11 +32,11 @@ const peopleList = [
 // добавлять в результирующий массив очередной элемент или нет.
 
 function isPositive(num) {
-// писать код тут
+
 return num > 0
 }
 function isMale(person) {
-// писать код тут
+
     return person.gender === 'male';
 }
 
@@ -90,17 +90,17 @@ timerAlarm(30);
 // Допишите функцию delayForSecond так, чтобы приветствие выводилось в консоль не сразу, 
 // а спустя 1 секунду. Используйте setTimeout.
 
-// function delayForSecond(callback) {
+function delayForSecond(callback) {
    
-//    setTimeout(() => {
-//     callback();
+   setTimeout(() => {
+    callback();
     
-//    }, 1000);
-// }
+   }, 1000);
+}
 
-// delayForSecond(function () {
-//    console.log('Привет, Глеб!');
-// })
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
 
 //Task#5
 

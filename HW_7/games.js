@@ -30,7 +30,8 @@ function turnOverText() {
         } else {
             alert("Вы ввели не слово введите, пожалуйста, слово");
         }
-    } while (regexp.test(userEnter) === false);
+    
+    } while (!regexp.test(userEnter) || userEnter === '');
 
 }
 
