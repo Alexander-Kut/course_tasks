@@ -30,4 +30,4 @@
 VanillaJS, HTML5, CSS3 (Sass)
 
 # Деплой проекта:
-https://github.com/Alexander-Kut/course_tasks
+https://alexander-kut.github.io/course_tasks/
